@@ -1,9 +1,9 @@
 require_relative( 'minibar' )
 class Room
-  attr_accessor( :number, :num_beds, :view, :rate, :current_guest, :minibar )
+  attr_accessor( :bathroom, :desk, :tv, :minibar, :current_guest)
   def initialize
     
-    @bathroom = true
+    @bathroom = "Shower, basin and toilet"
     @desk = true
     @tv = true
     @minibar = true

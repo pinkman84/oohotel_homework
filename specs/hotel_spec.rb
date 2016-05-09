@@ -16,6 +16,8 @@ attr_reader()
 
     @hotel.room_list.push(@room1, @room2, @room3, @room4, @room5, @room6)
 
+    @guest1 = Guest.new('Mr. Pinkman', 3, 1, 1000)
+
   end
 
 
@@ -32,7 +34,7 @@ attr_reader()
   end
 
   def test_num_of_beds_in_room
-    num_beds = @hotel.room_list.index(@room6).num_beds
+    num_beds = @hotel.room_list.index(@room6)
     assert_equal(5, num_beds)
   end
 

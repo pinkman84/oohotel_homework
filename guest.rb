@@ -1,5 +1,5 @@
 class Guest
-attr_accessor( :guest_name, :party_size, :stay, :money)
+attr_accessor( :guest_name, :beds_req, :vacation_length, :funds)
 
   def initialize(name, party_size, stay, money)
     @guest_name = name
